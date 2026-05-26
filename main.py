@@ -25,7 +25,7 @@ ALLOWED_EXTENSIONS = {"image/jpeg", "image/jpg", "image/png"}
 
 # --- MODELOS DE PYDANTIC (Esquemas de Respuesta) ---
 
-class UploadImageResponse(BaseModel):
+class UploadImageResponse(BaseModel): 
     message: str = Field(..., example="Imagen subida exitosamente")
     user: str = Field(..., example="juan_perez")
     s3_key: str = Field(..., example="juan_perez/foto_perfil.png")
